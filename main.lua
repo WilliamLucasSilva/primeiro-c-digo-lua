@@ -1,8 +1,8 @@
 Pessoa = {
     nome = '',
     idade = '',
-    Detalhes = function(self)  -- Adicione 'self' como primeiro parâmetro para acessar os campos da tabela
-       love.graphics.print('Nome: ' .. self.nome .. ', ' .. 'Idade: ' .. self.idade, 400, 300)  -- Use 'self' para acessar os campos da tabela      
+    Detalhes = function(self)
+       love.graphics.print('Nome: ' .. self.nome .. ', ' .. 'Idade: ' .. self.idade, 400, 300)
     end
 }
 
@@ -20,6 +20,6 @@ function love.load()
 end
 
 function love.draw()
-    roberto:Detalhes()  -- Chame a função com ()
+    roberto:Detalhes()
 end
 
